@@ -1,0 +1,72 @@
+*{box-sizing: border-box; }
+
+h1{text-align: center;
+    margin: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(60, 60, 61);
+    font-size: 175%;
+}
+
+section{
+    position:absolute;
+    top: -1px;
+    right: -2px;
+    min-width: 90px;
+    height: 50px;
+    border: 2px solid black;
+    padding:10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+}
+
+article{
+    position:relative;
+    top:50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:medium;
+}
+
+.box{
+    position:relative;
+    background-color: rgb(187, 184, 184);
+    border:2px solid black;
+    margin: 5px;
+    padding:5px;
+    min-height:150px; 
+      
+}
+
+#chicken{background-color:rgb(238, 97, 121);}
+#beef{background-color: rgb(197, 44, 44); color:white;}
+#sushi{background-color: rgb(209, 190, 80);}
+
+/* large devices */
+@media(min-width:992px){
+    .col-lg-4{
+        float:left;
+        width:32%;
+    }
+} 
+
+/* medium devices */
+@media(min-width:768px) and (max-width:991px){
+    .col-md-6{
+        float:left;
+        width:48%;
+    }
+    .col-md-12{
+        float:left;
+        clear:left;
+        width:97.25%;
+    }
+}
+
+/* small devices */
+@media(max-width: width 767px){
+    .col-sm-12{
+        float:left;
+        width:98%;
+    
+    }
+}
